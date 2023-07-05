@@ -1,0 +1,38 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #><#   /* Changed from hostspecific="false" */#>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="Microsoft.VisualBasic" #><#                      /* Added Assembly */#>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #><#                               /* Added Reference */#>
+<#@ import namespace="System.Reflection" #><#                       /* Added Reference */#>
+<#@ import namespace="Microsoft.VisualBasic.FileIO"#><#             /* Added Reference */#>
+<#@ output extension=".cs" #><#                                     /* Changed from .txt */#>
+<#
+	var folder = this.Host.ResolvePath("");
+	foreach (var inputFilePath in Directory.EnumerateFiles(folder, "*.csv"))
+	{
+        var fileNameNoExt = Path.GetFileNameWithoutExtension(inputFilePath);
+        using (TextFieldParser parser = new TextFieldParser(inputFilePath))
+        {
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(",");
+            parser.CommentTokens = new[] { "#" };
+
+            string[] headers = parser.ReadFields();
+            foreach (var field in headers)
+            {
+
+            }
+
+            while (!parser.EndOfData)
+            {
+                var line = parser.ReadFields();
+                for (int i = 0; i < headers.Length && i < line.Length; i++)
+                {
+
+                }
+            }
+        }
+	}
+#>

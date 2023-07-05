@@ -12,8 +12,6 @@ namespace AIM2023_CodeGeneration
 {
     internal class Program
     {
-
-        /// Goal: Input CSV(s), Output classes with static values
         static void Main(string[] args)
         {
             var folder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -23,10 +21,18 @@ namespace AIM2023_CodeGeneration
             GenerateFile(folder, "StateEducationEnvironmentWI.csv");
 
             Process.Start(folder);// open folder in windows explorer
+
+            //foreach (var value in StateDisabilityWI.AllValue)
+            //{
+            //    Console.WriteLine($"{value.Code} - {value.Description}");
+            //}
+            //Console.ReadKey();
         }
 
         static void GenerateFile(string folder, string fileName)
         {
+            // This method is what we'd write within an extension or other tool:
+
             var fileNameNoExt = Path.GetFileNameWithoutExtension(fileName);
             var inputFilePath = Path.Combine(folder, fileName);
             var outputFilePath = Path.Combine(folder, fileNameNoExt + ".cs");
