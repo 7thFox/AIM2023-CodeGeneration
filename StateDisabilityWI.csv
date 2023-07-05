@@ -1,0 +1,19 @@
+Code,Description,IsInvalid,ValidYearLow,ValidYearHigh,SkywardID
+"!!","Invalid","True","0","9999","C9384F45-AB4B-4AFA-B7DB-36871A59C4E9"
+"A","Autism","False","0","9999","80A8C1FF-7381-452D-B625-490D01393533"
+"CD","Cognitive Disability","False","0","2015","4C3AF1E7-11FD-49FF-A9B4-D7C07BC4E577"
+"DB","Deaf-Blind","False","0","9999","2A41B8D0-7266-4704-87E0-0007C6286999"
+"EBD","Emotional Behavioral Disability","False","0","9999","8FE70F16-BC07-454D-A824-998405FC2C02"
+"H","Hearing Impairment","False","0","2021","F44E9669-AEF1-4A08-A046-56A9774C03A7"
+"H","Deaf or Hard of Hearing","False","2022","2022","D937120F-50C6-431E-9CA2-F8A7660F451C"
+"H","Deaf and Hard of Hearing","False","2023","9999","88A02194-FF70-4EC8-B197-10CC8579A544"
+"ID","Intellectual Disability","False","2016","9999","C8126EA8-EA52-41B5-B122-DE86193E488C"
+"LD","Specific Learning Disability","False","0","9999","DF4A1D1C-7950-4BBC-84A2-A59018236F7B"
+"OHI","Other Health Impairment","False","0","9999","D4A9E85B-C43F-423B-A03D-3E622617B897"
+"OI","Orthopedic Impairment","False","0","9999","5C823606-138E-40C9-9553-48F86D6555EB"
+"SDD","Significant Developmental Delay","False","0","9999","CC8755B7-B9E4-4552-8A73-0CEBA96C86BD"
+"SL","Speech or Language Impairment","False","0","9999","DECAC17C-946E-4E5F-B511-39913DFE9666"
+"TBI","Traumatic Brain Injury","False","0","9999","D495805D-2B08-4AD9-9491-18CFF75185F0"
+"V","Visual Impairment","False","0","9999","261E1C95-5A87-4CB2-9BA9-3DDA5C5F57E5"
+
+#Loader: Skyward.Loaders.StateReportingWI.Loader.StateDisabilityWILoader

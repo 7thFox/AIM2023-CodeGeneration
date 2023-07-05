@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIM2023-CodeGeneration", "AIM2023-CodeGeneration.csproj", "{1D2A2A13-E398-42A9-B635-7F30D6E3389A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D2A2A13-E398-42A9-B635-7F30D6E3389A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2A2A13-E398-42A9-B635-7F30D6E3389A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2A2A13-E398-42A9-B635-7F30D6E3389A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2A2A13-E398-42A9-B635-7F30D6E3389A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D3D158B-9EFB-4202-9B11-838E385D029A}
+	EndGlobalSection
+EndGlobal
