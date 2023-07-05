@@ -38,19 +38,9 @@ namespace AIM2023_CodeGeneration
                 parser.SetDelimiters(",");
                 parser.CommentTokens = new[] { "#" };
 
-                var tt = new CreateRuntime()
-                {
-                    FileName = fileNameNoExt,
-                    Headers = parser.ReadFields(),
-                    Values = new List<string[]>(),
-                };
+                // TODO
 
-                while (!parser.EndOfData)
-                {
-                    tt.Values.Add(parser.ReadFields());
-                }
-
-                var csContents = tt.TransformText();
+                var csContents = string.Empty;// TODO
                 File.WriteAllText(outputFilePath, csContents);
             }
         }
