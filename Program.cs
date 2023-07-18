@@ -33,6 +33,12 @@ namespace AIM2023_CodeGeneration
                 parser.SetDelimiters(",");
                 parser.CommentTokens = new[] { "#" };
 
+                var allValues = new List<string[]>();
+                while (!parser.EndOfData)
+                {
+                    allValues.Add(parser.ReadFields());
+                }
+
                 // TODO: set csContents using T4 templates
                 var csContents = string.Empty;
 
