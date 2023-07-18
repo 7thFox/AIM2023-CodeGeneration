@@ -33,9 +33,8 @@ namespace AIM2023_CodeGeneration
                 parser.SetDelimiters(",");
                 parser.CommentTokens = new[] { "#" };
 
-                // TODO
-
-                var csContents = string.Empty;// TODO
+                // TODO: set csContents using T4 templates
+                var csContents = string.Empty;
 
                 // Note: Our output could also be to anywhere like creating
                 // files via VS extension APIs
