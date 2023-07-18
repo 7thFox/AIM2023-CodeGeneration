@@ -10,6 +10,8 @@
         public string ValidYearHigh { get; set; }
         public string SkywardID { get; set; }
 
+        // Note that this would be something dumb to do instead of our existing
+        // db-based records in Qmlativ.
         public static StateDisabilityWI_Example[] AllCodes = new StateDisabilityWI_Example[]
         {
             new StateDisabilityWI_Example()
