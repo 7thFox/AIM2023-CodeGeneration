@@ -33,6 +33,7 @@ namespace AIM2023_CodeGeneration
                 parser.SetDelimiters(",");
                 parser.CommentTokens = new[] { "#" };
 
+                var headers = parser.ReadFields();
                 var allValues = new List<string[]>();
                 while (!parser.EndOfData)
                 {
